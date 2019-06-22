@@ -4,8 +4,8 @@
 
 <% @superheroes.each_with_index do |hero, index| %>
   <div class="superheroes">
-    <h3>Hero Name: <%= @superhero[index].name %></h3><br>
-    <h5>Hero Power: <%= @superhero[index].power %></h5><br>
-    <h5>Hero Biography: <%= @superhero[index].biography %></h5><br>
+    <h3>Hero Name: <%= hero[index].name %></h3><br>
+    <h5>Hero Power: <%= hero[index].power %></h5><br>
+    <h5>Hero Biography: <%= hero[index].biography %></h5><br>
   </div><br>
 <% end %>
