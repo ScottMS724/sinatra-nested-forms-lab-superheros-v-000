@@ -2,10 +2,10 @@
 <h3>Team Motto: <%= @team.motto %></h3><br>
 
 
-<% @superheroes.each do |hero| %>
+<% @superheroes.each_with_index do |hero| %>
   <div class="superheroes">
-    <h3>Hero Name: <%= @hero[:name] %></h3><br>
-    <h5>Hero Power: <%= @hero[:power] %></h5><br>
-    <h5>Hero Biography: <%= @hero[:biography] %></h5><br>
+    <h3>Hero Name: <%= hero[] %></h3><br>
+    <h5>Hero Power: <%= hero[:power] %></h5><br>
+    <h5>Hero Biography: <%= hero[:biography] %></h5><br>
   </div><br>
 <% end %>
